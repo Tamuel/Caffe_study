@@ -30,3 +30,8 @@ pip install numpy
 7. Open Caffe.sln in "build" folder
 8. Build all projects of solutions by "Release" mode
 
+## References
+* [Caffe tutorials](https://caffe.berkeleyvision.org/tutorial/)
+* [Caffe in a Day Tutorial](https://docs.google.com/presentation/d/1HxGdeq8MPktHaPb-rlmYYQ723iWzq9ur6Gjo71YiG0Y/edit#slide=id.gc2fcdcce7_216_438)
+* [Intel / TAU Summer Workshop on Deep Learning and Caffe](http://courses.cs.tau.ac.il/Caffe_workshop/Bootcamp/)
+* [API Documentations](https://caffe.berkeleyvision.org/doxygen/annotated.html)
