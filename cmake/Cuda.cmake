@@ -4,7 +4,7 @@ endif()
 
 # Known NVIDIA GPU achitectures Caffe can be compiled for.
 # This list will be used for CUDA_ARCH_NAME = All option
-set(Caffe_known_gpu_archs "20 21(20) 30 35 50 60 61")
+set(Caffe_known_gpu_archs "30 35 50 60 61")
 
 ################################################################################################
 # A function for automatic detection of GPUs installed  (if autodetection is enabled)
@@ -39,8 +39,9 @@ function(caffe_detect_installed_gpus out_variable)
       # nvcc outputs text containing line breaks when building with MSVC.
       # The line below prevents CMake from inserting a variable with line
       # breaks in the cache
-      string(REGEX MATCH "([1-9].[0-9])" __nvcc_out "${__nvcc_out}")
-      string(REPLACE "2.1" "2.1(2.0)" __nvcc_out "${__nvcc_out}")
+      #string(REGEX MATCH "([1-9].[0-9])" __nvcc_out "${__nvcc_out}")
+      #string(REPLACE "2.1" "2.1(2.0)" __nvcc_out "${__nvcc_out}")
+      set(__nvcc_out "6.1")
       set(CUDA_gpu_detect_output ${__nvcc_out} CACHE INTERNAL "Returned GPU architetures from caffe_detect_gpus tool" FORCE)      
     endif()
   endif()

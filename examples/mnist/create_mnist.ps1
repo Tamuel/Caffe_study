@@ -12,7 +12,7 @@ $DATA = "$CaffeRoot\data\mnist"
 if("$BuildDir" -eq "") {
   $BuildDir = "$CaffeRoot\build"
 }
-$BUILD = "$BuildDir\examples\mnist"
+$BUILD = "$BuildDir\examples\mnist\Release"
 
 $BACKEND = "lmdb"
 
@@ -25,9 +25,9 @@ if(Test-Path $EXAMPLE\mnist_train_$BACKEND) {
   rm -Recurse -Force $EXAMPLE\mnist_test_$BACKEND
 }
 
-. $BUILD\Release\convert_mnist_data.exe $DATA\train-images.idx3-ubyte `
+. $BUILD\convert_mnist_data.exe $DATA\train-images.idx3-ubyte `
   $DATA\train-labels.idx1-ubyte $EXAMPLE\mnist_train_$BACKEND --backend=$BACKEND
-. $BUILD\Release\convert_mnist_data.exe $DATA\t10k-images.idx3-ubyte `
+. $BUILD\convert_mnist_data.exe $DATA\t10k-images.idx3-ubyte `
   $DATA\t10k-labels.idx1-ubyte $EXAMPLE\mnist_test_$BACKEND --backend=$BACKEND
 
 echo "Done."

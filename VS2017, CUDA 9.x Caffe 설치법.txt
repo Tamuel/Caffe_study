@@ -1,0 +1,11 @@
+1. VS2017
+2. CUDA 9.x
+3. CuDNN 7.x
+4. Python 3.5.x
+5. Boost 1.65.1 - 14.0 x64
+6. MSBuild 2015 설치
+7. caffe script 수정 (https://tharindumathew.com/2018/04/13/using-caffe-on-windows-with-cuda-9-0-for-vs-2013-2015-and-2017/)
+8. ./cmake/Cuda.cmake 수정 (https://github.com/BVLC/caffe/issues/6408)
+	line 7 : set(Caffe_known_gpu_archs "30 35 50 60 61")
+	line 40, 41 : set(__nvcc_out "6.1")
+9. caffe 폴더에서 ./scripts/build_win.cmd 실행
