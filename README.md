@@ -2,17 +2,18 @@
 Repository for studying Caffe deep learning framework.
 
 ## Prerequisite
-* Visual studio 2017
-* Cuda version 9.2
-* cuDNN version 7.6.1
-* python 3.5.x
+* [Visual studio](https://visualstudio.microsoft.com/) 2017
+* [Cuda](https://developer.nvidia.com/cuda-toolkit-archive) version 9.2
+* [cuDNN](https://developer.nvidia.com/rdp/cudnn-download) version 7.6.1
+* [python](https://www.python.org/downloads/) 3.5.x
   * numpy
 * [Boost 1.65.1 msvc 14.0 x64](https://dl.bintray.com/boostorg/release/1.65.1/binaries/)
 * [MSBuild 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
   
 ## How to build
+* First, you have to download or clone this archive and unzip these
 * I will call root folder of this repository as **$CAFFE$**
-1. First you have to install **Visual studio 2017 (Or higher)**
+1. Install **Visual studio 2017 (Or higher)**
 1. And then, install **Cuda version** 9.2 and **cuDNN** 7.6.1 **(Which compatiable with cuda version)**
 1. You have to modify **./cmake/Cuda.cmake** to proper SM version of your GPU device. **(line 7 and 44)**
   
