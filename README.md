@@ -6,7 +6,7 @@ Repository for studying Caffe deep learning framework.
 * [Cuda](https://developer.nvidia.com/cuda-toolkit-archive) version 9.2
 * [cuDNN](https://developer.nvidia.com/rdp/cudnn-download) version 7.6.1
 * [python](https://www.python.org/downloads/) 3.5.x
-  * numpy
+* [CMake](https://cmake.org/download/) 3.4 or higher
 * [Boost 1.65.1 msvc 14.0 x64](https://dl.bintray.com/boostorg/release/1.65.1/binaries/)
 * [MSBuild 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
   
